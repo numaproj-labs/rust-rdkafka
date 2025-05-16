@@ -174,5 +174,15 @@ pub fn rd_kafka_resp_err_t_to_rdkafka_error(err: RDKafkaRespErr) -> RDKafkaError
         RD_KAFKA_RESP_ERR_PRINCIPAL_DESERIALIZATION_FAILURE => PrincipalDeserializationFailure,
         RD_KAFKA_RESP_ERR_END_ALL => EndAll,
         RD_KAFKA_RESP_ERR__LOG_TRUNCATION => LogTruncation,
+        RD_KAFKA_RESP_ERR__INVALID_DIFFERENT_RECORD => InvalidRecord,
+        RD_KAFKA_RESP_ERR__DESTROY_BROKER => BrokerDestroy,
+        RD_KAFKA_RESP_ERR_UNKNOWN_TOPIC_ID => UnknownTopic,
+        RD_KAFKA_RESP_ERR_FENCED_MEMBER_EPOCH => FencedLeaderEpoch,
+        RD_KAFKA_RESP_ERR_UNRELEASED_INSTANCE_ID => FencedInstanceId,
+        RD_KAFKA_RESP_ERR_UNSUPPORTED_ASSIGNOR => UnsupportedFeature,
+        RD_KAFKA_RESP_ERR_STALE_MEMBER_EPOCH => StaleBrokerEpoch,
+        RD_KAFKA_RESP_ERR_UNKNOWN_SUBSCRIPTION_ID => UnknownGroup,
+        RD_KAFKA_RESP_ERR_TELEMETRY_TOO_LARGE => MessageSizeTooLarge,
+        RD_KAFKA_RESP_ERR_REBOOTSTRAP_REQUIRED => BrokerTransportFailure,
     }
 }
